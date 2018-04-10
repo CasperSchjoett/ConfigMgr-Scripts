@@ -1,0 +1,8 @@
+#Get correct server/desktop version for queries
+Get-CimInstance -ClassName Win32_OperatingSystem | Select-Object version
+
+#Collection for Server 2012 R2
+SELECT * FROM SMS_R_System WHERE OperatingSystemAndVersion LIKE '%Server 6.3'
+
+#Collection for Windows 10
+SELECT * FROM SMS_R_System WHERE SMS_R_System.OperatingSystemNameandVersion = '%Workstation 10%'
