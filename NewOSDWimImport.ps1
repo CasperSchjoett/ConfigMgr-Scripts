@@ -1,0 +1,2 @@
+New-CMOperatingSystemImage -Name 'Windows 10 x64 Pro' -Description 'Install.wim from the original Microsoft installation media'´
+-Version '10.0.10240' -Path '\\CM01\Pkgsource\OSD\Windows 10\x64\install.wim'
